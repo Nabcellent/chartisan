@@ -57,12 +57,16 @@ class Registrar
         foreach ($chartisan as $chartClass) {
             // Create the chart instance.
             $instance = $this->app->make($chartClass);
+
             // Get the name of the chart by using the instance name or the class name.
             $name = $instance->name ?? Str::snake(class_basename($chartClass));
+
             // Clean the prefix and transform it into an array for concatenation.
             $prefixArray = Str::of($instance->prefix ?? '')->explode('/')->filter()->values();
+
             // Define the route name for the given chart.
             $routeName = $instance->routeName ?? $name;
+
             // Register the route for the given chart.
             $this->route
                 ->prefix($globalPrefixArray->merge($prefixArray)->implode('/'))

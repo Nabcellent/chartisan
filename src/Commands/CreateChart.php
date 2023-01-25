@@ -39,7 +39,7 @@ class CreateChart extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace): string
     {
-        return $rootNamespace.'\Chartisan';
+        return $rootNamespace.'\Charts';
     }
 
     /**

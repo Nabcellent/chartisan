@@ -4,9 +4,9 @@ declare(strict_types = 1);
 
 namespace DummyNamespace;
 
-use Nabcellent\Chartisan\BaseChart;
 use Illuminate\Http\Request;
-use Chartisan\PHP\Chartisan;
+use Nabcellent\Chartisan\BaseChart;
+use Nabcellent\Chartisan\Chartisan\Chartisan;
 
 class DummyClass extends BaseChart
 {

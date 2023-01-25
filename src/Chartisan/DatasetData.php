@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Nabcellent\Chartisan\Chartisan;
 
@@ -33,9 +33,9 @@ class DatasetData
     /**
      * Creates a new instance of DatasetData.
      *
-     * @param string $name
-     * @param array $values
-     * @param array|null $extra
+     * @param  string  $name
+     * @param  array  $values
+     * @param  array|null  $extra
      */
     public function __construct(string $name, array $values, ?array $extra)
     {

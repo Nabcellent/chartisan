@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Nabcellent\Chartisan\Chartisan;
 
@@ -19,7 +19,7 @@ class Chartisan
     /**
      * Creates a new instance of a chartisan chart.
      *
-     * @param ServerData $serverData
+     * @param  ServerData  $serverData
      */
     public function __construct(ServerData $serverData)
     {
@@ -39,24 +39,26 @@ class Chartisan
     /**
      * Sets the chart labels.
      *
-     * @param string[] $labels
+     * @param  string[]  $labels
      * @return Chartisan
      */
     public function labels(array $labels): Chartisan
     {
         $this->serverData->chart->labels = $labels;
+
         return $this;
     }
 
     /**
      * Adds extra information to the chart.
      *
-     * @param array $value
+     * @param  array  $value
      * @return Chartisan
      */
     public function extra(array $value): Chartisan
     {
         $this->serverData->chart->extra = $value;
+
         return $this;
     }
 
@@ -64,9 +66,9 @@ class Chartisan
      * AdvancedDataset appends a new dataset to the chart or modifies an existing one.
      * If the ID has already been used, the dataset will be replaced with this one.
      *
-     * @param string $name
-     * @param array $values
-     * @param array|null $extra
+     * @param  string  $name
+     * @param  array  $values
+     * @param  array|null  $extra
      * @return Chartisan
      */
     public function advancedDataset(string $name, array $values, ?array $extra): Chartisan
@@ -79,6 +81,7 @@ class Chartisan
         } else {
             $this->serverData->datasets[] = new DatasetData($name, $values, $extra);
         }
+
         return $this;
     }
 
@@ -86,8 +89,8 @@ class Chartisan
      * Dataset adds a new simple dataset to the chart. If more advanced control is
      * needed, consider using `AdvancedDataset` instead.
      *
-     * @param string $name
-     * @param array $values
+     * @param  string  $name
+     * @param  array  $values
      * @return Chartisan
      */
     public function dataset(string $name, array $values): Chartisan
@@ -118,7 +121,7 @@ class Chartisan
     /**
      * Gets the dataset with the given name.
      *
-     * @param string $name
+     * @param  string  $name
      * @return ServerData|null
      */
     protected function getDataset(string $name): ?DatasetData
@@ -128,6 +131,7 @@ class Chartisan
                 return $dataset;
             }
         }
+
         return null;
     }
 }
