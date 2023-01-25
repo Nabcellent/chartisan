@@ -5,7 +5,7 @@ You can install Laravel Charts by using [Composer](https://getcomposer.org/)
 You can use the following composer command to install it into an existing laravel project.
 
 ```
-composer require consoletvs/charts:7.*
+composer require nabcellent/chartisan
 ```
 
 Laravel will already register the service provider to your application because laravel charts
@@ -16,8 +16,8 @@ does make use of the extra laravel tag on the `composer.json` schema.
 You can publish the configuration file of Laravel charts by running the following command:
 
 ```
-php artisan vendor:publish --tag=charts
+php artisan vendor:publish --tag=chartisan
 ```
 
-This will create a new file under `app/config/charts.php` that you can edit to modify some of the
+This will create a new file under `app/config/chartisan.php` that you can edit to modify the
 options of Laravel Charts.

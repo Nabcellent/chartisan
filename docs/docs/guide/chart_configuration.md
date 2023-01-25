@@ -1,6 +1,6 @@
 # Chart Configuration
 
-You can customize how some chart configuration on the laravel side by simply applying some of the
+You can customize how some chart configuration on the laravel side by simply applying the
 class properties needed.
 
 You can modify the following props on the chart:
@@ -17,9 +17,9 @@ declare(strict_types = 1);
 
 namespace App\Charts;
 
-use ConsoleTVs\Charts\BaseChart;
 use Illuminate\Http\Request;
-use Chartisan\PHP\Chartisan;
+use Nabcellent\Chartisan\BaseChart;
+use Nabcellent\Chartisan\Chartisan\Chartisan;
 
 class SampleChart extends BaseChart
 {

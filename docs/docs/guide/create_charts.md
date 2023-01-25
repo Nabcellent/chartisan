@@ -19,9 +19,9 @@ declare(strict_types = 1);
 
 namespace App\Charts;
 
-use ConsoleTVs\Charts\BaseChart;
 use Illuminate\Http\Request;
-use Chartisan\PHP\Chartisan;
+use Nabcellent\Chartisan\BaseChart;
+use Nabcellent\Chartisan\Chartisan\Chartisan;
 
 class SampleChart extends BaseChart
 {
@@ -63,7 +63,8 @@ You can use the following example as a guide to register an example chart.
 
 namespace App\Providers;
 
-use ConsoleTVs\Charts\Registrar as Charts;
+use App\Charts\SampleChart;
+use Nabcellent\Chartisan\Registrar as Chartisan;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -73,10 +74,10 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    public function boot(Charts $charts)
+    public function boot(Chartisan $charts)
     {
         $charts->register([
-            \App\Charts\SampleChart::class
+            SampleChart::class
         ]);
     }
 }
