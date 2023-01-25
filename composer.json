@@ -33,7 +33,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Nabcellent\\Charts\\ServiceProvider"
+                "Nabcellent\\Charts\\ChartisanServiceProvider"
             ]
         }
     },

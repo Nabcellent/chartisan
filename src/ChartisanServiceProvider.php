@@ -5,7 +5,7 @@ namespace Nabcellent\Charts;
 use Illuminate\Support\ServiceProvider;
 use Nabcellent\Charts\Commands\ChartsCommand;
 
-class ChartsServiceProvider extends ServiceProvider
+class ChartisanServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
