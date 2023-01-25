@@ -37,7 +37,7 @@ class ChartisanServiceProvider extends ServiceProvider
         $this->publishes([__DIR__ . '/Config/chartisan.php' => config_path('chartisan.php')], 'chartisan');
         // Create the blade directives
         $routeNamePrefix = $config->get('chartisan.global_route_name_prefix');
-        Blade::directive('chart', function ($expression) use ($routeNamePrefix) {
+        Blade::directive('chartisan', function ($expression) use ($routeNamePrefix) {
             return "<?php echo route('$routeNamePrefix.'.$expression); ?>";
         });
         // Register the console commands.
