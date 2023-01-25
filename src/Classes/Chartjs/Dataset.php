@@ -1,9 +1,9 @@
 <?php
 
-namespace Nabcellent\Charts\Classes\Chartjs;
+namespace Nabcellent\Chartisan\Classes\Chartjs;
 
-use Nabcellent\Charts\Classes\DatasetClass;
-use Nabcellent\Charts\Features\Chartjs\Dataset as DatasetFeatures;
+use Nabcellent\Chartisan\Classes\DatasetClass;
+use Nabcellent\Chartisan\Features\Chartjs\Dataset as DatasetFeatures;
 
 class Dataset extends DatasetClass
 {

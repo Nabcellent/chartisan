@@ -1,9 +1,9 @@
 <?php
 
-namespace Nabcellent\Charts;
+namespace Nabcellent\Chartisan;
 
 use Illuminate\Support\ServiceProvider;
-use Nabcellent\Charts\Commands\ChartsCommand;
+use Nabcellent\Chartisan\Commands\ChartsCommand;
 
 class ChartisanServiceProvider extends ServiceProvider
 {
@@ -15,8 +15,8 @@ class ChartisanServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->publishes([
-            __DIR__.'/Config/charts.php' => config_path('charts.php'),
-        ], 'charts_config');
+                             __DIR__ . '/Config/chartisan.php' => config_path('chartisan.php'),
+        ], 'chartisan_config');
 
         $this->loadViewsFrom(__DIR__.'/Views', 'charts');
 
@@ -39,7 +39,7 @@ class ChartisanServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->mergeConfigFrom(
-            __DIR__.'/Config/charts.php',
+            __DIR__ . '/Config/chartisan.php',
             'charts'
         );
     }

@@ -1,10 +1,10 @@
 <?php
 
-namespace Nabcellent\Charts\Classes\Echarts;
+namespace Nabcellent\Chartisan\Classes\Echarts;
 
 use Illuminate\Support\Collection;
-use Nabcellent\Charts\Classes\DatasetClass;
-use Nabcellent\Charts\Features\Echarts\Dataset as DatasetFeatures;
+use Nabcellent\Chartisan\Classes\DatasetClass;
+use Nabcellent\Chartisan\Features\Echarts\Dataset as DatasetFeatures;
 
 class Dataset extends DatasetClass
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Nabcellent\Charts\Classes\Highcharts;
+namespace Nabcellent\Chartisan\Classes\Highcharts;
 
 use Illuminate\Support\Collection;
-use Nabcellent\Charts\Classes\DatasetClass;
-use Nabcellent\Charts\Features\Highcharts\Dataset as DatasetFeatures;
+use Nabcellent\Chartisan\Classes\DatasetClass;
+use Nabcellent\Chartisan\Features\Highcharts\Dataset as DatasetFeatures;
 
 class Dataset extends DatasetClass
 {

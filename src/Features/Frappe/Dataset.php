@@ -1,6 +1,6 @@
 <?php
 
-namespace Nabcellent\Charts\Features\Frappe;
+namespace Nabcellent\Chartisan\Features\Frappe;
 
 trait Dataset
 {

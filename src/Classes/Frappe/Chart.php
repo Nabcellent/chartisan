@@ -1,9 +1,9 @@
 <?php
 
-namespace Nabcellent\Charts\Classes\Frappe;
+namespace Nabcellent\Chartisan\Classes\Frappe;
 
-use Nabcellent\Charts\Classes\BaseChart;
-use Nabcellent\Charts\Features\Frappe\Chart as ChartFeatures;
+use Nabcellent\Chartisan\Classes\BaseChart;
+use Nabcellent\Chartisan\Features\Frappe\Chart as ChartFeatures;
 
 class Chart extends BaseChart
 {

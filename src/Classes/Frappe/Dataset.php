@@ -1,9 +1,9 @@
 <?php
 
-namespace Nabcellent\Charts\Classes\Frappe;
+namespace Nabcellent\Chartisan\Classes\Frappe;
 
-use Nabcellent\Charts\Classes\DatasetClass;
-use Nabcellent\Charts\Features\Frappe\Dataset as DatasetFeatures;
+use Nabcellent\Chartisan\Classes\DatasetClass;
+use Nabcellent\Chartisan\Features\Frappe\Dataset as DatasetFeatures;
 
 class Dataset extends DatasetClass
 {

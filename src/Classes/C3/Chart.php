@@ -1,10 +1,10 @@
 <?php
 
-namespace Nabcellent\Charts\Classes\C3;
+namespace Nabcellent\Chartisan\Classes\C3;
 
 use Illuminate\Support\Collection;
-use Nabcellent\Charts\Classes\BaseChart;
-use Nabcellent\Charts\Features\C3\Chart as ChartFeatures;
+use Nabcellent\Chartisan\Classes\BaseChart;
+use Nabcellent\Chartisan\Features\C3\Chart as ChartFeatures;
 
 class Chart extends BaseChart
 {

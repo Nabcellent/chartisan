@@ -1,6 +1,6 @@
 <?php
 
-namespace Nabcellent\Charts\Features\Fusioncharts;
+namespace Nabcellent\Chartisan\Features\Fusioncharts;
 
 trait Chart
 {

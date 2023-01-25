@@ -1,6 +1,6 @@
 <?php
 
-namespace Nabcellent\Charts\Commands;
+namespace Nabcellent\Chartisan\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\GeneratorCommand;

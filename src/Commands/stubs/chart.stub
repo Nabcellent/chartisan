@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use Nabcellent\Charts\Classes\Library\Chart;
+use Nabcellent\Chartisan\Classes\Library\Chart;
 
 class DummyClass extends Chart
 {

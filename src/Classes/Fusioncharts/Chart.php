@@ -1,10 +1,10 @@
 <?php
 
-namespace Nabcellent\Charts\Classes\Fusioncharts;
+namespace Nabcellent\Chartisan\Classes\Fusioncharts;
 
 use Illuminate\Support\Collection;
-use Nabcellent\Charts\Classes\BaseChart;
-use Nabcellent\Charts\Features\Fusioncharts\Chart as ChartFeatures;
+use Nabcellent\Chartisan\Classes\BaseChart;
+use Nabcellent\Chartisan\Features\Fusioncharts\Chart as ChartFeatures;
 
 class Chart extends BaseChart
 {

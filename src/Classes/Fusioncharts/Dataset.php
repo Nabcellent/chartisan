@@ -1,10 +1,10 @@
 <?php
 
-namespace Nabcellent\Charts\Classes\Fusioncharts;
+namespace Nabcellent\Chartisan\Classes\Fusioncharts;
 
 use Illuminate\Support\Collection;
-use Nabcellent\Charts\Classes\DatasetClass;
-use Nabcellent\Charts\Features\Fusioncharts\Dataset as DatasetFeatures;
+use Nabcellent\Chartisan\Classes\DatasetClass;
+use Nabcellent\Chartisan\Features\Fusioncharts\Dataset as DatasetFeatures;
 
 class Dataset extends DatasetClass
 {

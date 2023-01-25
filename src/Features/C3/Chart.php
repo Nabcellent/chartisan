@@ -1,6 +1,6 @@
 <?php
 
-namespace Nabcellent\Charts\Features\C3;
+namespace Nabcellent\Chartisan\Features\C3;
 
 trait Chart
 {

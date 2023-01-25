@@ -1,9 +1,9 @@
 <?php
 
-namespace Nabcellent\Charts\Classes\Highcharts;
+namespace Nabcellent\Chartisan\Classes\Highcharts;
 
-use Nabcellent\Charts\Classes\BaseChart;
-use Nabcellent\Charts\Features\Highcharts\Chart as ChartFeatures;
+use Nabcellent\Chartisan\Classes\BaseChart;
+use Nabcellent\Chartisan\Features\Highcharts\Chart as ChartFeatures;
 
 class Chart extends BaseChart
 {

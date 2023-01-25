@@ -1,6 +1,6 @@
 <?php
 
-namespace Nabcellent\Charts\Classes;
+namespace Nabcellent\Chartisan\Classes;
 
 use Balping\JsonRaw\Encoder;
 use Balping\JsonRaw\Raw;

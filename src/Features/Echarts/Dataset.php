@@ -1,6 +1,6 @@
 <?php
 
-namespace Nabcellent\Charts\Features\Echarts;
+namespace Nabcellent\Chartisan\Features\Echarts;
 
 use Illuminate\Support\Collection;
 

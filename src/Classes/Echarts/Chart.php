@@ -1,9 +1,9 @@
 <?php
 
-namespace Nabcellent\Charts\Classes\Echarts;
+namespace Nabcellent\Chartisan\Classes\Echarts;
 
-use Nabcellent\Charts\Classes\BaseChart;
-use Nabcellent\Charts\Features\Echarts\Chart as ChartFeatures;
+use Nabcellent\Chartisan\Classes\BaseChart;
+use Nabcellent\Chartisan\Features\Echarts\Chart as ChartFeatures;
 
 class Chart extends BaseChart
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Nabcellent\Charts\Features\Chartjs;
+namespace Nabcellent\Chartisan\Features\Chartjs;
 
 trait Chart
 {

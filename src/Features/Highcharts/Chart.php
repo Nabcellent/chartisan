@@ -1,6 +1,6 @@
 <?php
 
-namespace Nabcellent\Charts\Features\Highcharts;
+namespace Nabcellent\Chartisan\Features\Highcharts;
 
 trait Chart
 {

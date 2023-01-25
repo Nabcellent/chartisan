@@ -27,13 +27,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "Nabcellent\\Charts\\": "src"
+            "Nabcellent\\Chartisan\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Nabcellent\\Charts\\ChartisanServiceProvider"
+                "Nabcellent\\Chartisan\\ChartisanServiceProvider"
             ]
         }
     },
