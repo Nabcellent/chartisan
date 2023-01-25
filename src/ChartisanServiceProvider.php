@@ -1,46 +1,48 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Nabcellent\Chartisan;
 
+use Illuminate\Contracts\Config\Repository;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\Routing\Registrar as RouteRegistrar;
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use Nabcellent\Chartisan\Commands\ChartsCommand;
 
 class ChartisanServiceProvider extends ServiceProvider
 {
     /**
-     * Bootstrap the application services.
-     *
-     * @return void
-     */
-    public function boot(): void
-    {
-        $this->publishes([
-                             __DIR__ . '/Config/chartisan.php' => config_path('chartisan.php'),
-        ], 'chartisan_config');
-
-        $this->loadViewsFrom(__DIR__.'/Views', 'charts');
-
-        $this->publishes([
-            __DIR__.'/Views' => resource_path('views/vendor/charts'),
-        ]);
-
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                ChartsCommand::class,
-            ]);
-        }
-    }
-
-    /**
-     * Register the application services.
-     *
-     * @return void
+     * Register any application services.
      */
     public function register(): void
     {
-        $this->mergeConfigFrom(
-            __DIR__ . '/Config/chartisan.php',
-            'charts'
-        );
+        // Merge the configuration files.
+        $this->mergeConfigFrom(__DIR__ . '/Config/chartisan.php', 'chartisan');
+        // Register the Chart Registerer singleton class to avoid resolving it
+        // multiple times in the application.
+        $this->app->singleton(Registrar::class, fn (Application $app) => new Registrar(
+            $app,
+            $app->make(Repository::class),
+            $app->make(RouteRegistrar::class)
+        ));
+    }
+
+    /**
+     * Bootstrap any application services.
+     */
+    public function boot(Repository $config, Registrar $chartisan): void
+    {
+        // Publish the configuration file to the config path.
+        $this->publishes([__DIR__ . '/Config/chartisan.php' => config_path('chartisan.php')], 'chartisan');
+        // Create the blade directives
+        $routeNamePrefix = $config->get('chartisan.global_route_name_prefix');
+        Blade::directive('chart', function ($expression) use ($routeNamePrefix) {
+            return "<?php echo route('$routeNamePrefix.'.$expression); ?>";
+        });
+        // Register the console commands.
+        if ($this->app->runningInConsole()) {
+            $this->commands([Commands\CreateChart::class]);
+        }
     }
 }
