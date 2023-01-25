@@ -18,7 +18,7 @@ class ChartisanServiceProvider extends ServiceProvider
     public function register(): void
     {
         // Merge the configuration files.
-        $this->mergeConfigFrom(__DIR__.'/../config/chartisan.php', 'chartisan');
+        $this->mergeConfigFrom(__DIR__.'/Config/chartisan.php', 'chartisan');
 
         // Register the Chart Registerer singleton class to avoid resolving it
         // multiple times in the application.
@@ -35,7 +35,7 @@ class ChartisanServiceProvider extends ServiceProvider
     public function boot(Repository $config, Registrar $chartisan): void
     {
         // Publish the configuration file to the config path.
-        $this->publishes([__DIR__.'/../config/chartisan.php' => config_path('chartisan.php')]);
+        $this->publishes([__DIR__.'/Config/chartisan.php' => config_path('chartisan.php')], 'chartisan');
 
         // Create the blade directives
         $routeNamePrefix = $config->get('chartisan.global_route_name_prefix');
