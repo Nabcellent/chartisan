@@ -27,7 +27,7 @@ You can use the following composer command to install it into an existing larave
 composer require nabcellent/chartisan
 ```
 
-Laravel will already register the service provider to your application because laravel charts
+Laravel will already register the service provider to your application because Chartisan
 does make use of the extra laravel tag on the `composer.json` schema.
 
 ## Publish the configuration file
