@@ -103,7 +103,7 @@ class Chartisan
      *
      * @return string
      */
-    public function toJSON(): string
+    public function toJSON(): false|string
     {
         return json_encode($this->toObject());
     }
@@ -122,7 +122,7 @@ class Chartisan
      * Gets the dataset with the given name.
      *
      * @param  string  $name
-     * @return ServerData|null
+     * @return DatasetData|null
      */
     protected function getDataset(string $name): ?DatasetData
     {

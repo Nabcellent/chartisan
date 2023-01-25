@@ -5,6 +5,7 @@
 <a href="https://packagist.org/packages/nabcellent/chartisan"><img src="https://poser.pugx.org/nabcellent/chartisan/d/total.svg" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/nabcellent/chartisan"><img src="https://poser.pugx.org/nabcellent/chartisan/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/nabcellent/chartisan"><img src="https://poser.pugx.org/nabcellent/chartisan/license.svg" alt="License"></a>
+<a href="https://packagist.org/packages/nabcellent/chartisan"><img src="https://poser.pugx.org/nabcellent/chartisan/require/php" alt="PHP Version Require"></a>
 </p>
 
 ## What is Chartisan?
