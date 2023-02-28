@@ -52,7 +52,7 @@ class Chartisan
     /**
      * Adds extra information to the chart.
      *
-     * @param  array  $value
+     * @param  array<mixed>  $value
      * @return Chartisan
      */
     public function extra(array $value): Chartisan
@@ -67,8 +67,8 @@ class Chartisan
      * If the ID has already been used, the dataset will be replaced with this one.
      *
      * @param  string  $name
-     * @param  array  $values
-     * @param  array|null  $extra
+     * @param  array<float>  $values
+     * @param  array<mixed>|null  $extra
      * @return Chartisan
      */
     public function advancedDataset(string $name, array $values, ?array $extra): Chartisan
@@ -90,7 +90,7 @@ class Chartisan
      * needed, consider using `AdvancedDataset` instead.
      *
      * @param  string  $name
-     * @param  array  $values
+     * @param  array<float>  $values
      * @return Chartisan
      */
     public function dataset(string $name, array $values): Chartisan

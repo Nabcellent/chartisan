@@ -19,23 +19,23 @@ class DatasetData
     /**
      * Stores the dataset values.
      *
-     * @var array[float]
+     * @var array<float>
      */
     public array $values;
 
     /**
      * Stores the dataset extra information if needed.
      *
-     * @var ?array
+     * @var ?array<mixed>
      */
     public ?array $extra;
 
     /**
      * Creates a new instance of DatasetData.
      *
-     * @param  string  $name
-     * @param  array  $values
-     * @param  array|null  $extra
+     * @param  string       $name
+     * @param  array<float> $values
+     * @param array<mixed>|null    $extra
      */
     public function __construct(string $name, array $values, ?array $extra)
     {

@@ -19,7 +19,7 @@ class ChartData
     /**
      * Stores the extra information of the chart if needed.
      *
-     * @var array|null
+     * @var array<mixed>|null
      */
     public ?array $extra = null;
 }

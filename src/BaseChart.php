@@ -34,6 +34,8 @@ abstract class BaseChart
     /**
      * Determines the middlewares that will be applied
      * to the chart endpoint.
+     *
+     * @var array<int, class-string|string>|null
      */
     public ?array $middlewares;
 
@@ -44,6 +46,8 @@ abstract class BaseChart
     abstract public function handler(Request $request): Chartisan;
 
     /**
+     * @param array<string> $properties
+     *
      * @throws \ReflectionException
      */
     public static function __set_state(array $properties)
