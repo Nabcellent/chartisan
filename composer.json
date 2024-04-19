@@ -11,10 +11,10 @@
     ],
     "require": {
         "php": ">=8.0",
-        "illuminate/console": "^9.48|^10.0",
-        "illuminate/contracts": "^9.48|^10.0",
-        "illuminate/http": "^9.48|^10.0",
-        "illuminate/support": "^9.48|^10.0"
+        "illuminate/console": "^9.48|^10.0|^11.0",
+        "illuminate/contracts": "^9.48|^10.0|^11.0",
+        "illuminate/http": "^9.48|^10.0|^11.0",
+        "illuminate/support": "^9.48|^10.0|^11.0"
     },
     "require-dev": {
         "laravel/pint": "^1.4",
@@ -22,7 +22,7 @@
     },
     "authors": [
         {
-            "role": "De veloper",
+            "role": "Software Engineer",
             "name": "Nabcellent",
             "email": "nabcellent.dev@gmail.com"
         }
